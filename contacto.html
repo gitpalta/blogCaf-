@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--meta-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Es importante para que se muestre el contenido de forma proporciona len cada dispositivo-->
+    <meta name="description" content="página web de blog de café">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>BlogDeCafé</title>
+</head>
+<body>
+    
+    <header class="header">
+
+        <div class="contenedor">
+            <div class="barra">
+                <a href="index.html" class="logo">
+                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafé</span></h1>
+                </a>
+
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+
+            </div>
+        </div><!--.contenedor-->
+
+        <div class="header__texto">
+
+            <h2 class="no-margin">Blog de café con consejos y cursos</h2>
+            <p class="no-margin">Aprende de los expertos con las mejores recetas y consejos</p>
+
+        </div><!--.header__texto-->
+
+    </header>
+
+    <main class="contenedor ">
+        <h3 class="centrar-texto">Contacto</h3> 
+        
+        <div class="contacto-background"></div>
+
+        <form action="" class="formulario">
+            <div class="campo">
+                <label class="campo__label"  for="nombre">Nombre</label><!--Este label refiere al input de id "nombre"-->
+                <input
+                class="campo__field"
+                type="text" 
+                placeholder="Ingresa tu nombre" 
+                id="nombre"> <!--Utilizamos id para que label refiera a éste input para darle mayor accesibilidad-->
+            </div>
+            <div class="campo">
+                <label class="campo__label"  for="email">E-mail</label><!--Este label refiere al input de id "nombre"-->
+                <input
+                class="campo__field"
+                type="email" 
+                placeholder="Ingresa tu e-mail" 
+                id="email"> <!--Utilizamos id para que label refiera a éste input para darle mayor accesibilidad-->
+            </div>
+            <div class="campo">
+                <label class="campo__label"  for="mensaje">Mensaje</label>
+                <textarea 
+                class="campo__field campo__field--textarea"
+                name="mensaje" 
+                id="mensaje" cols="30" rows="10" 
+                placeholder="Escribe aquí"></textarea>
+            </div>
+            <div class="campo">
+                <input
+                type="submit" 
+                value="Enviar" 
+                class="boton boton--primario boton__mensaje">
+            </div>
+        </form>
+
+    </main>
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="barra">
+                <a href="index.html" class="logo">
+                    <h4 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafé</span></h1>
+                </a>
+
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <script src="js/modernizr.js"></script> <!--JS se coloca acá-->
+</body>
+</html>
